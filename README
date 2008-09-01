@@ -9,3 +9,4 @@ The other part is implicit scoping of ActiveRecord finders, so users can only se
 So, for example, Post.find(:all) when a user is logged in can automatically limit to what the finders return.
 The limiting criteria is defined in the model, so it's defined in one place, but applies anywhere.
 
+NOTE: Currently in a very broken form. Does not actually work without servere tinkering. Deadlines comes first, refactoring comes later.
