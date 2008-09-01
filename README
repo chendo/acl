@@ -1,0 +1,11 @@
+ACL
+---------------
+
+ACL is actually two parts. It consists of a controller and action based access control system, where users have roles,
+and roles have permissions, which are a controller and a comma delimited set of actions.
+
+The other part is implicit scoping of ActiveRecord finders, so users can only see what they have access to.
+
+So, for example, Post.find(:all) when a user is logged in can automatically limit to what the finders return.
+The limiting criteria is defined in the model, so it's defined in one place, but applies anywhere.
+
